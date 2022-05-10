@@ -1,0 +1,404 @@
+section{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navegacao{
+    right: 0;
+    left:0;
+}
+nav{
+    position: fixed;
+    margin: 10% auto;
+    display:inline-flex;
+    justify-content:center; 
+    background: transparent; 
+    z-index: 5;
+}
+nav>ul{
+    display: flex; 
+    background: transparent;
+    
+}
+ul>li,a{
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration:none;
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+    margin-right: 10px;
+    background: transparent;
+}
+li :hover{
+    color: rgb(39, 199, 211);
+    transition: 1s;
+}
+#logotop{
+    background: transparent;
+    animation: img-animation 4s ease-out infinite;
+    margin-top: 50%;
+    width: auto;
+    max-width: 40vh;
+}
+
+@keyframes img-animation{
+    0%{transform: translateY(0px);}
+    25%{transform: translateY(-20px);}
+    50%{transform: translateY(20px);}
+    100%{transform: translateY(0px);}
+}
+p{
+    background: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:#fff;
+}
+h2{
+    margin-bottom: 20px;
+    background: transparent;
+    font-size: 70px;
+    font-family: 'Trebuchet MS'; 
+    letter-spacing: 0.05em;
+}
+.text1{
+    margin: 100px auto;
+    background: transparent;
+    text-align: left;
+    width: 400px;
+}
+.text2{
+    background: transparent;
+    text-align: left;
+    width: 400px;
+    margin: 20px auto;
+}
+.text3{
+    width: 400px;
+    margin: 100px auto 20px;
+    text-align: left;
+    background:transparent;
+}
+.text4{
+    width: 400px;
+    margin: 70px auto;
+    text-align: left;
+    
+}
+#subtitulo{
+    position: absolute;
+    padding: 40px;
+    padding-left: 10px; 
+    background:rgba(0, 0, 0, 0.699);
+    box-shadow: 6px 6px 0px rgb(0, 0, 0, 0.4);
+    text-align: center;
+    font-family: Georgia;
+    color: white;
+    font-size: 16pt;
+    margin-top: 50%;
+    width: 80%;
+    white-space: nowrap;
+    animation: anime2-animation 4s ease alternate;
+}
+
+@keyframes anime2-animation{
+    0%{ color: transparent;
+        width: 0;
+    }
+    50%{color:transparent;
+    }
+    100%{
+        width: 80%;
+         
+    }
+}
+/*IMAGENS*/
+figure{background: transparent;}    
+.imgempresa{
+    background: none;
+    box-shadow: none;
+    
+}
+#imgempresa{
+    width: 40vh;
+    margin: 20px auto;
+    background: transparent;
+    
+}
+#imgestrutura{
+    width: 40vh;
+    background: transparent;
+    margin:20px 0 0 0; 
+}
+#imgdiferencial{
+    width: 40vh;
+    background: transparent;
+    margin: 0 auto;
+}
+
+section:nth-of-type(2){
+    height: 800px;
+    /*text-align: left;*/
+    background-image: linear-gradient(rgb(60, 228, 240),rgb(8, 91, 129)) ;
+}
+section:nth-of-type(4){
+    height: 800px;
+    /*text-align: right;*/
+    /*display: flex;*/
+    background-image: linear-gradient(rgb(60, 228, 240),rgb(8, 91, 129)) ;
+
+}
+section:nth-of-type(6){
+    height: 800px;
+    /*text-align: left;/*
+    /*display:flex;*/
+    background-image: linear-gradient(rgb(60, 228, 240),rgb(8, 91, 129)) ;
+
+}
+section:nth-of-type(8){
+    height: 1000px;
+    background-image: linear-gradient(rgb(60, 228, 240),rgb(8, 91, 129)) ;
+    
+}
+/*SECTION IMGs*/
+section:nth-of-type(1){
+    background-image: url(./img/imagsetion1.jpg);
+    height: 112vh;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+section:nth-of-type(3){
+    background-image: url(./img/empresawalmir.jpg);
+    background-size: cover;
+}
+section:nth-of-type(5){
+    background-image: url(./img/lojafront.jpeg.jpeg);
+    background-size: cover;
+}
+section:nth-of-type(7){
+    background-image: url(./img/completospaniel.jpeg.jpeg);
+    background-size: cover;
+}
+.carrosel{
+    display:flex;
+    overflow: hidden;
+    width: 400px;
+    margin: 0 auto;
+}
+.imgCurso{
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+.imgCurso img{
+    height: 200px;
+    box-shadow: 4px 4px 4px #000;
+    border-radius: 15px;
+   
+}
+.imgCurso img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+/*RODA PE*/
+footer{
+    min-width: 500px;
+    text-align: center;
+    background: #444;   
+    height:100px;
+}
+/*MENU*/
+menu {
+    --size: 2.5rem;
+    --radius: 6rem;
+    --padding: 1rem;
+    --bg-color: rgba(255, 255, 255, 0.9);
+    --fg-color: rgba(0, 0, 0, 0.7);
+    --hi-color: #c22eff;
+    
+    position: fixed;
+    bottom: var(--padding);
+    right: var(--padding);
+  }
+  .action img{
+      width: 40px;
+  }
+  .trigger img{
+    width: 50px;
+}
+  menu > * {
+    position: absolute;
+    
+    display: grid;
+    place-content: center;
+    
+    border-radius: 50%;
+    
+    background: var(--bg-color);
+    color: var(--fg-color);
+    
+    text-decoration: none;
+    
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.6);
+  }
+  
+  menu > .action {
+    --factor: 0;
+    
+    width: var(--size);
+    height: var(--size);
+    right: calc(0.35 * var(--size));
+    bottom: calc(0.35 * var(--size));
+    
+    opacity: 0;
+    
+    transform: rotate(calc(-1 * var(--angle))) translateY(calc(-1 * var(--radius) * var(--factor))) rotate(var(--angle));
+    
+    transition: transform 250ms ease-in-out, opacity 250ms ease-in-out, box-shadow 250ms ease-in-out, color 250ms ease-in-out;
+  }
+  
+  menu > .action:hover, menu > .trigger:hover {
+    color: var(--hi-color);
+    box-shadow: 0px 0px 0px 0.35rem rgba(0, 0, 0, 0.2);
+  }
+  
+  menu.open > .action {
+    --factor: 1;
+    
+    opacity: 1;
+  }
+  
+  menu > .action:nth-child(1) {
+    --angle: 0deg;
+    transition-delay: 0ms;
+  }
+  menu > .action:nth-child(2) {
+    --angle: 30deg;
+    transition-delay: 50ms;
+  }
+  
+  menu > .action:nth-child(3) {
+    --angle: 60deg;
+    transition-delay: 100ms;
+  }
+  
+  menu > .action:nth-child(4) {
+    --angle: 90deg;
+    transition-delay: 150ms;
+  }
+  
+  menu > .trigger {
+    width: calc(1.6 * var(--size));
+    height: calc(1.6 * var(--size));
+    bottom: 0;
+    right: 0;
+    
+    font-size: 2rem;
+    transition: box-shadow 250ms ease-in-out, color 250ms ease-in-out;
+  }
+  
+  menu > .trigger > img {
+    transition: transform 250ms ease-in-out;
+  }
+  
+  menu.open > .trigger > img {
+    transform: rotate(-135deg);
+  }
+/*RESPONSIVIDADE*/
+@media (min-width: 768px){
+    section{
+        width: 820px;
+    }
+    #logotop{
+        margin-top: 30%;
+        max-width: 50vh;
+    }
+    #subtitulo{
+        margin-top: 20%;
+    } 
+    .carrosel{
+        width: 600px;
+    }
+    footer{
+        min-width: 820px;
+    }   
+}
+@media (min-width: 1024px){
+    section{
+        width:1349px;
+    }
+
+    section:nth-of-type(2){
+        height: 500px;
+        text-align: left;
+        display: flex;
+        
+    }
+    section:nth-of-type(4){
+        height: 500px;
+        text-align: right;
+        display: flex;
+    }
+    section:nth-of-type(6){
+        height: 500px;
+        text-align: left;
+        display:flex;
+    }
+    section:nth-of-type(8){
+        height: 700px;    
+    }  
+
+    nav{
+        margin: 30px auto;
+    }
+    #logotop{
+        margin-top:10%;
+        max-width: 50vh;
+    }
+    #subtitulo{
+        margin-top: 9%;
+        width: 80%;
+        margin: 100px 0;
+    }
+    #imgempresa{
+        width: 80vh;
+        margin: 80px 0;
+    }
+    #imgestrutura{
+        width: 80vh;
+        margin: 70px;
+    }
+    #imgdiferencial{
+        width: 80vh;
+        margin: 50px 0;
+    }
+    #article{
+        margin: 80px 80px;
+        width: 600px;
+    }
+    .text4{
+        display: flex;
+        margin: 80px auto 0;
+        width: 80%;
+    }
+    .text4 p{
+        margin: 30px 0 0 100px;
+    }
+    .carrosel{
+        width: 800px;
+    }
+    .imgCurso img{
+        width: 60vh;
+        margin: 40px 10px 
+    }
+    footer{
+        min-width: 1349px;
+}
