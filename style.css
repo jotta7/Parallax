@@ -1,9 +1,19 @@
+body{
+    background-color: rgb(215, 232, 186);
+}
+:root{
+    --blue: #4da1a9;
+    --greenTea: #d7e8ba;
+    --orange: #e53d00;
+    --yellow: #edf043;
+    --white: #fff;
+}
+
 section{
     width: 500px;
     height: 500px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
 
     background-position: center;
     background-size: cover;
@@ -32,15 +42,20 @@ ul>li,a{
     text-transform: uppercase;
     text-decoration:none;
     font-weight: bold;
-    color: white;
+    color: var(--blue);
     font-family: sans-serif;
     margin-right: 10px;
     background: transparent;
+    transition: 0.7s;
 }
 li :hover{
-    color: rgb(39, 199, 211);
-    transition: 1s;
+    color: var(--white);
+    text-decoration:underline;
 }
+#cursos{
+    color: var(--orange);
+}
+
 #logotop{
     background: transparent;
     animation: img-animation 4s ease-out infinite;
@@ -58,7 +73,7 @@ li :hover{
 p{
     background: transparent;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 1.5rem;
     color:#fff;
 }
 h2{
@@ -92,6 +107,14 @@ h2{
     text-align: left;
     
 }
+.text4 h3{
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+
+}
 #subtitulo{
     position: absolute;
     padding: 40px;
@@ -121,85 +144,148 @@ h2{
 }
 /*IMAGENS*/
 figure{background: transparent;}    
-.imgempresa{
-    background: none;
-    box-shadow: none;
-    
-}
+
 #imgempresa{
-    width: 40vh;
+    width: 50vh;
     margin: 20px auto;
     background: transparent;
     
 }
 #imgestrutura{
-    width: 40vh;
+    width: 50vh;
     background: transparent;
     margin:20px 0 0 0; 
 }
 #imgdiferencial{
-    width: 40vh;
+    width: 50vh;
     background: transparent;
     margin: 0 auto;
 }
 
+.center{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+
+}
+.center img{
+    max-width: 250px;
+    max-height: 250px;
+    border: var(--yellow) 5px solid;
+    margin: auto;
+    box-shadow: #000  5px 5px 10px;
+}
+
+.structAll{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.struct1{
+    display: flex;
+    justify-content: flex-start;
+}
+.struct2{
+    display: flex;
+    justify-content: flex-end;
+}
+.struct1 img, .struct2 img{
+    margin: 0 10px;
+    width: 400px;
+    height: 200px;
+    border: var(--yellow) 5px solid;
+    box-shadow: #000  5px 5px 10px;
+}
+
+
 section:nth-of-type(2){
-    height: 800px;
+    height: 900px;
     /*text-align: left;*/
     background-image: linear-gradient(rgb(60, 228, 240),rgb(8, 91, 129)) ;
 }
 section:nth-of-type(4){
-    height: 800px;
+    height: 900px;
     /*text-align: right;*/
     /*display: flex;*/
     background-image: linear-gradient(rgb(60, 228, 240),rgb(8, 91, 129)) ;
 
 }
 section:nth-of-type(6){
-    height: 800px;
+    height: 1000px;
     /*text-align: left;/*
     /*display:flex;*/
     background-image: linear-gradient(rgb(60, 228, 240),rgb(8, 91, 129)) ;
 
 }
 section:nth-of-type(8){
-    height: 1000px;
-    background-image: linear-gradient(rgb(60, 228, 240),rgb(8, 91, 129)) ;
-    
+    height: 5800px;
+    background-color: #22201B;
+    background-color: #E53D00;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.67'%3E%3Cpath fill='%23f44200' d='M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z'/%3E%3Cpath fill='%23ff4904' d='M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z'/%3E%3Cpath fill='%23ff5514' d='M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z'/%3E%3Cpath fill='%23ff6123' d='M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z'/%3E%3Cpath fill='%23FF6D32' d='M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z'/%3E%3Cpath fill='%23ff733b' d='M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z'/%3E%3Cpath fill='%23ff7944' d='M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z'/%3E%3Cpath fill='%23ff7f4c' d='M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z'/%3E%3Cpath fill='%23ff8555' d='M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z'/%3E%3Cpath fill='%23FF8B5E' d='M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
 }
 /*SECTION IMGs*/
 section:nth-of-type(1){
-    background-image: url(./img/imagsetion1.jpg);
-    height: 112vh;
+    background-image: url("https://images.pexels.com/photos/7932711/pexels-photo-7932711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); 
+    background-size: cover;
+    height: 130vh;
     margin: 0;
     padding: 0;
     background-size: cover;
 }
 section:nth-of-type(3){
-    background-image: url(./img/empresawalmir.jpg);
-    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/6924609/pexels-photo-6924609.jpeg");
+    background-size:cover;
+    height: 100vh;
+    
 }
 section:nth-of-type(5){
-    background-image: url(./img/lojafront.jpeg.jpeg);
+    background-image: url('https://images.pexels.com/photos/8343328/pexels-photo-8343328.jpeg?auto=compress&cs=tinysrgb&w=600');
     background-size: cover;
+    height: 80vh;
 }
 section:nth-of-type(7){
-    background-image: url(./img/completospaniel.jpeg.jpeg);
+    background-image: url("https://images.pexels.com/photos/17902120/pexels-photo-17902120/free-photo-of-fotografia-animal-fotografia-de-animais-fundo-preto-gato.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-size: cover;
+}
+
+button{
+    padding: 10px 50px;
+    background-color: var(--blue);
+    border: var(--white) 3px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: bold;
+    transition: 0.5s;
+    margin-top: 50px;
+}
+button:hover{
+    box-shadow: var(--blue) 3px 2px 20px;
+    box-shadow: var(--blue) 3px 5px 50px;
+    background-color: transparent;
+    border: var(--blue) solid 2px;
+    color: var(--blue);
 }
 .carrosel{
     display:flex;
     overflow: hidden;
     width: 400px;
-    margin: 0 auto;
+    margin: 10vh auto;   
 }
 .imgCurso{
     display: flex;
     transform: translateX(0);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
+    gap: 10px;
 }
 .imgCurso img{
     height: 200px;
+    width: 300px;
     box-shadow: 4px 4px 4px #000;
     border-radius: 15px;
    
@@ -208,21 +294,74 @@ section:nth-of-type(7){
     transform: scale(1.3);
     transition: 1s;
 }
+
+.escolhas{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards{
+    width: 100vw;
+    height: 30vh;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 10px;
+    border: var(--orange) solid 2px;
+}
+.cards ion-icon{
+    color: var(--orange);
+    font-size: 5rem;
+}
+.cards h3{
+    color: var(--orange);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px auto;
+}
+.divisores{
+    width: 80%;
+    border: rgba(0, 0, 0, 0.5) solid 1px;
+    margin: 20px auto;
+}
+
+/*cards alunos*/
+.cardsAlunos{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border-bottom: black solid 2px;
+    margin: 20px auto;
+    padding: 30px;
+}
+.cardsAlunos p{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.cardsAlunos img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
 /*RODA PE*/
 footer{
     min-width: 500px;
     text-align: center;
-    background: #444;   
+    background: var(--blue);   
     height:100px;
+   
 }
+
+
 /*MENU*/
 menu {
     --size: 2.5rem;
     --radius: 6rem;
     --padding: 1rem;
-    --bg-color: rgba(255, 255, 255, 0.9);
+    --bg-color: rgba(255, 255, 255, 0.6);
     --fg-color: rgba(0, 0, 0, 0.7);
-    --hi-color: #c22eff;
+    --hi-color: #e53d00;
     
     position: fixed;
     bottom: var(--padding);
@@ -243,7 +382,7 @@ menu {
     border-radius: 50%;
     
     background: var(--bg-color);
-    color: var(--fg-color);
+    border: var(--blue) solid 2px;
     
     text-decoration: none;
     
@@ -267,6 +406,7 @@ menu {
   
   menu > .action:hover, menu > .trigger:hover {
     color: var(--hi-color);
+    border: var(--hi-color) solid 2px;
     box-shadow: 0px 0px 0px 0.35rem rgba(0, 0, 0, 0.2);
   }
   
@@ -309,13 +449,18 @@ menu {
     transition: transform 250ms ease-in-out;
   }
   
-  menu.open > .trigger > img {
-    transform: rotate(-135deg);
+  menu.open > .trigger > ion-icon {
+    transform: rotate(135deg);
   }
+
+
 /*RESPONSIVIDADE*/
 @media (min-width: 768px){
     section{
         width: 820px;
+    }
+    .center{
+        flex-direction: row;
     }
     #logotop{
         margin-top: 30%;
@@ -325,7 +470,7 @@ menu {
         margin-top: 20%;
     } 
     .carrosel{
-        width: 600px;
+        width: 700px;
     }
     footer{
         min-width: 820px;
@@ -333,7 +478,7 @@ menu {
 }
 @media (min-width: 1024px){
     section{
-        width:1349px;
+        width:100vw;
     }
 
     section:nth-of-type(2){
@@ -353,8 +498,8 @@ menu {
         display:flex;
     }
     section:nth-of-type(8){
-        height: 700px;    
-    }  
+        height: 3600px;
+    }
 
     nav{
         margin: 30px auto;
@@ -370,28 +515,51 @@ menu {
     }
     #imgempresa{
         width: 80vh;
-        margin: 80px 0;
     }
+
     #imgestrutura{
         width: 80vh;
         margin: 70px;
     }
+    .struct1 img, .struct2 img{
+        margin: 0 10px;
+        width: 650px;
+        height: 300px;
+    }
+    
     #imgdiferencial{
         width: 80vh;
         margin: 50px 0;
     }
+  
     #article{
         margin: 80px 80px;
         width: 600px;
     }
     .text4{
         display: flex;
+        flex-direction: column;
         margin: 80px auto 0;
         width: 80%;
+        text-align: center;
+    }
+    .text4 h3{
+        color: var(--white);
+        font-size: 2rem;
+
     }
     .text4 p{
         margin: 30px 0 0 100px;
     }
+    .text4 a{
+        text-align: center;
+    }
+    button{
+        padding: 20px 50px;
+        margin: 50px auto;
+        ;
+    }
+   
     .carrosel{
         width: 800px;
     }
@@ -399,6 +567,28 @@ menu {
         width: 60vh;
         margin: 40px 10px 
     }
+    
+    .escolhas{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .cards{
+        width: 33vw;
+    }
+    
+    /*cards alunos*/
+    .cardsAlunos{
+        width: 50vh;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: black solid 2px;
+        margin: 20px auto;
+        padding: 30px;
+    }
+    
     footer{
-        min-width: 1349px;
+        width: 100%;
+    } 
+
 }

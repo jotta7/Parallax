@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dogshow parallize</title>
+    <meta name="keywords" content="petshop, groomer, gato, pets, cachorro, curso, pet, tosa, banho"> 
+    <title>Dogshow</title>
+
     <link rel="stylesheet" href="reset.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css">
+
+    <script src="anima.js" defer></script>
     <script src="script.js" defer></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
 <body>
     <div class="container">
+
+        <menu>
+            <a href="https://api.whatsapp.com/send?phone=5583996044858" class="action"><img src="./img/iconewhatsapp.png" alt=""></a>
+            <a href="https://www.instagram.com/dogshowjp/" target="_blank" class="action"><img src="./img/icone instagram.png" alt=""></a>
+            <a href="https://goo.gl/maps/cGVJHbtut2Lh3xf78" target="_blank" class="action"><img src="./img/gmaps.png" alt=""></a>
+            <a href="#" class="action"><img src="./img/pata.png" alt=""></a>
+            <a href="#" class="trigger"><ion-icon name="reload-outline"></ion-icon></a>
+        </menu>
     
     <section>
         <!-- BARRA DE NAVEGAÇÃO FLUTUANTE -->
@@ -20,7 +35,7 @@
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#estrutura">Estrutura</a></li>
                 <li><a href="#diferencial">Diferencial</a></li>
-                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#final" id="cursos">Cursos</a></li>
             </ul>
             
         </nav>
@@ -46,7 +61,13 @@
             <img class="imgtexto" src="./img/iconempresa.png" alt="icone empresa" id="imgempresa">
         </figure>
     </section>
-    <section></section>
+    <section>
+        <div class="center">
+            <img id="center1" src="./img/prof.PNG" alt="">
+            <img id="center2" src="./img/cur0.jpg" alt="">
+            <img id="center3" src="./img/facespaniel.jpeg.jpeg" alt="">
+        </div>
+    </section>
     <section>
         <a name="estrutura"></a>
         <figure>
@@ -62,14 +83,23 @@
             cães e gatos, independente do comportamento, deixando o animal seguro e à vontade.
             Além disso, as instalações são limpas e desinfetadas de acordo com as normas
             de boas práticas de assepsia em relação ao ambiente e os materiais utilizados.
-            Esta parceria é importante para suprir, em um único local, todas as necessidades 
-            referentes aos cuidados com o animal de estimação, inclusive aqueles ligados à 
-            higiene e à saúde do seu companheiro."
+            "
         </P>
         
         </article>
     </section>
-    <section></section>
+    <section> 
+
+           <div class="structAll">
+                <div class="struct1">
+                    <img src="./img/lojafront.jpeg" alt="">
+                </div>
+                
+                <div class="struct2">
+                    <img   src="./img/lojainto.jpeg" alt="">
+                </div>
+           </div>
+    </section>
     <section>
         <a name="diferencial"></a>
         <article class="text3" id="article">
@@ -85,11 +115,15 @@
     </section>    
     <section></section>
     <section>
-        <a name="cursos"></a>
+        <a name="final"></a>
         <article class="text4">
             <h2>Cursos profissional Groomer</h2>
-            <p>Curso profissionalizante para quem deseja ingressar no mercado de trabalho. Este curso dá formação de tosador e é indicado para pessoas com pouca (que ainda não trabalha com a tesoura) ou nenhuma experiência; O direcionamento é na tosa com tesoura em pelagem cheia, evitando tosas gerais. Assim usamos os pelos para embelezar os animais. O foco está nos procedimentos que enfatizam uma boa finalização, trabalhando com as raças que mais frequentam os pet shops.</p>
+            
+            <h3>Construa uma carreira de sucesso como groomer</h3>
+            
+             <a href="https://api.whatsapp.com/send?phone=5583996044858"><button>Quero garantir minha vaga!</button></a>
         </article>
+
         <div class="carrosel">
             <figure class="imgCurso">
                 <img src="./img/cur0.jpg" alt="">
@@ -107,25 +141,133 @@
                 <img src="./img/cur12.jpg" alt="">
             </figure>
         </div>
+        <article class="text4">
+
+            <p>Curso profissionalizante para quem deseja ingressar no mercado de trabalho.
+                 Este curso dá formação de tosador e é indicado para pessoas com pouca 
+                 (que ainda não trabalha com a tesoura) ou nenhuma experiência; O direcionamento
+                  é na tosa com tesoura em pelagem cheia ate técnicas avançadas, Focando na estrutura da raça, assim usamos os 
+                  pelos para embelezar os animais. O foco está nos procedimentos que enfatizam 
+                  uma boa finalização, trabalhando com as raças que mais frequentam os pet shops.
+            </p>
+        </article>   
+
+        <div class="divisores"></div>
+
+        <div class="escolhas">
+            <article class="text4">
+                <h3>Porque escolher?</h3>
+            </article>
+
+            <div class="cards">
+                <ion-icon name="medal-outline"></ion-icon>
+                <h3> Formação completa</h3>
+                <p>
+                    Comece do zero e avance na direção das suas primeiras oportunidades na área e receba um certificado ao final do curso.
+                </p>
+            </div>
+            <div class="cards">
+                <ion-icon name="school-outline"></ion-icon>
+                <h3> Programa de especialização</h3>
+                <p>
+                    Especialize-se em tosas e técnicas, amplamente utilizadas no mercado.
+                </p>
+            </div>
+            <div class="cards">
+                <ion-icon name="stats-chart-outline"></ion-icon>
+                <h3>Aulas avançadas</h3>
+                <p>
+                    Esteja entre os melhores explorando casos reais de forma prática.
+                </p>
+            </div>
+            <div class="cards">
+                <ion-icon name="cut-outline"></ion-icon>
+                <h3>Aprenda na prática</h3>
+                <p>
+                    Desde o primeiro dia de aula você vai aprender na prática. Além de contar com mentorias de carreira e soft skills.
+                </p>
+            </div>
+            <div class="cards">
+                <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                <h3> Suporte educacional</h3>
+                <p>
+                    Caso tenha dúvidas no decorrer e após seu estudo conte com nossos professores para te ajudar.
+                </p>
+            </div>
+
+            
+        </div>
+
+        <div class="divisores"></div>
+
+        <article class="text4">
+            <p>Este é um treinamento completo sobre Banho e Tosa.  No treinamento tomamos o cuidado de ter 
+                vários tipos de pets com tosas variadas.
+            </p>
+        </article>
+
+           
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/tkzwXX53qQ8?si=kC0z9_yhsiqXfidc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         
-       
+        <div class="divisores"></div>
+
+        <div class="escolhas">
+            <article class="text4">
+                <h3>Veja o que os nossos alunos estão falando:</h3>
+            </article>
+
+            <div class="cardsAlunos">
+                <p>
+                    "Fiz muitas conexões que me levaram a hoje me redescobrir como profissional e atuar com o que aprendi, que além de estar em alta no mercado fazem me destacar no mercado. Sou eternamente grato a Walmir assim como sou um eterno aluno do inicio ao fim!"
+                </p>
+                <img src="https://liberal.com.br/wp-content/uploads/2020/06/capa-3.jpg" alt=""> 
+                <h3>Iago Senna</h3>
+                <p>Aluno DogShow</p>
+            </div>
+
+            <div class="cardsAlunos">
+                <video width="150" src="img/WhatsApp Video 2023-10-11 at 09.47.21.mp4" type="video/mp4" controls></video>
+                <h3>Leonardo Alves</h3>
+                <p>Aluno DogShow</p>
+            </div>
+
+            <div class="cardsAlunos">
+                <p>
+                    "Professor e mestre Wamir, gostaria de agradecer ao senhor por todos os seus ensinamentos e amimichelezade maravilhosa. Todas as vezes que eu estiver executando meu trabalho com carinho e amor a esses seres vou lembrar do senhor. O meu MUITO OBRIGADA, foi uma honra ter sido sua aluna".
+                </p>
+                <img src="" alt=""> 
+                <h3>Michele Ferreira </h3>
+                <p>Aluno DogShow</p>
+            </div>
+
+            <div class="cardsAlunos">
+                <p>
+                    "Sem sombra de dúvida o melhor professor de banho e tosa! Já fiz dois cursos do walmir e recomendo fortemente! Vale cada centavo! Excelente didática e qualidade!"
+                </p>
+                <img src="https://2.bp.blogspot.com/_WnQcVKwmgds/TPqk3J4J38I/AAAAAAAABi8/lpTw7hYIlzg/s1600/free-face-hair-removal-cream-231x300.jpg" alt=""> 
+                <h3>Anna Maria </h3>
+                <p>Aluno DogShow</p>
+            </div>
+
+            <div class="cardsAlunos">
+                <p>
+                    Amei o curso, ótimo professor explica tudo muito bem, "É impossível não aprender com Walmir Martins! Eu não sabia absolutamente nada e hoje tenho alegria de poder exercer minha nova profissão. OBRIGADA de coração". 
+                </p>
+                <img src="https://lirp.cdn-website.com/064fd76d/dms3rep/multi/opt/0702-640w.jpg" alt=""> 
+                <h3>Sandra Mirella </h3>
+                <p>Aluno DogShow</p>
+            </div>
+        </div>
         
     </section>
     <!-- RODAPE COM CONTATOS -->
     <footer>
         
         <p>
-            make by Lucas Martins <br>
+            make by <a href="https://jotta7.github.io/portfolio/" id="cursos"><ion-icon name="code-slash-outline"></ion-icon>Lucas Martins | Desenvolvedor</a> <br>
             © Copyright petshop Dog Show - 2022
         </p>
         
-        <menu>
-            <a href="https://api.whatsapp.com/send?phone=5583996044858" class="action"><img src="./img/iconewhatsapp.png" alt=""></a>
-            <a href="https://www.instagram.com/dogshowjp/" target="_blank" class="action"><img src="./img/icone instagram.png" alt=""></a>
-            <a href="https://goo.gl/maps/cGVJHbtut2Lh3xf78" target="_blank" class="action"><img src="./img/gmaps.png" alt=""></a>
-            <a href="#" class="action"><img src="./img/pata.png" alt=""></a>
-            <a href="#" class="trigger"><img src="./img/trigger.png" alt=""></a>
-          </menu>
     </footer>
     </div>    
     
